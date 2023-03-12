@@ -7,16 +7,53 @@
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">   
+<link href="navbar-fixed.css" rel="stylesheet">
+<link rel="stylesheet" href="busstyles.css">
 
 
-<style>
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-</style>
+
 </head>
 <body>
-    <div id='map' style='height: 300px;'></div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <img src="logo.png" alt="" width="150" height="125">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="https://btrudeau84.github.io/Portfolio-Landing-Page/">Home</a>
+              </li>
+             <!-- <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
+              </li>-->
+             <!-- <li class="nav-item">
+                <a class="nav-link" href="moreabout.html">About Me</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://btrudeau84.github.io/Pacmen/">Pacman</a></li>
+                  <li><a class="dropdown-item" href=" https://btrudeau84.github.io/Eyeballs/">Eye Mover</a></li>
+                  <li><a class="dropdown-item" href="https://btrudeau84.github.io/Bus-Tracker/">Bus Tracker</a></li>
+                  <li><a class="dropdown-item" href="https://btrudeau84.github.io/analog-clock/">Digital Clock</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="description">
+        <p>This is a bus tracker of a bus in Portland, OR.  You can find the code here at my Github <a href="https://github.com/btrudeau84/Bus-Tracker">https://github.com/btrudeau84/Bus-Tracker</a></p>
+      </div>
+   
+      <div id='map' style='height: 300px;'></div>
     <script src="mapanimation.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>
